@@ -16,7 +16,7 @@ func text_read():
 		if text[dialogue_index]["choise"] != "":
 			$ColorRect/Button.text = text[dialogue_index]["choise"]
 		
-		$ColorRect/Background.texture = text[dialogue_index]["Background"]
+		$Background.texture = text[dialogue_index]["Background"]
 		$ColorRect/Label.text = text[dialogue_index]["Name"]
 		$ColorRect/RichTextLabel.bbcode_text = text[dialogue_index]["Text"]
 		dialogue_index += 1
