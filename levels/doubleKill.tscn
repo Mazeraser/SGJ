@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://bgs/new/koyoty_nastupayut.png" type="Texture" id=1]
+[ext_resource path="res://scenes/revolvers.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/doubleKill.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Background" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
